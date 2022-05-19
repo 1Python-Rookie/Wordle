@@ -22,8 +22,10 @@ for index in range(1, 7):
     time.sleep(2)
     if compare == target:
         print("Nice job!")
+        var: bool = True
         break
     else:
+        var: bool = False
         for letter in compare:
             if letter in target:
                 if letter == target.index(letter):
@@ -48,3 +50,5 @@ for index in range(1, 7):
                         third_row.remove(letter)
                     except ValueError:
                         pass
+if not var:
+    print("The correct word is " + pick.capitalize())
