@@ -7,6 +7,7 @@ player_points = 0
 cpu_points = 0
 for index in range(1, 6):
     computer = random.choice(choices)
+    # make sure the user only inputs rock, paper or scissors
     while True:
         player = input("Rock, Paper or Scissors? ")
         if not player.upper() == "ROCK" and not player.upper() == "PAPER" and not player.upper() == "SCISSORS":
@@ -58,3 +59,5 @@ elif cpu_points > player_points:
     print("The computer won. Better luck next time")
 else:
     print("Woah you tied with the computer!")
+
+print("Thank you for playing")
