@@ -19,6 +19,7 @@ for index in range(1, 7):
             print(guess.upper())
             break
     time.sleep(2)
+    # delays execution of the rest of code
     if compare == target:
         print("Nice job!")
         var: bool = True
