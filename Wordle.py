@@ -51,6 +51,5 @@ for index in range(1, 7):
                         pass
 if not var:
     print("The correct word is " + pick.capitalize())
-# test
-#  second test
+
 
